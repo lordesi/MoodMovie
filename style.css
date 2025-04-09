@@ -24,7 +24,31 @@
 
 }
 
+.logo-image,
+.logo-profile {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
+.settings-image {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.profile-image{
+    width: 40px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+
+
+}
 nav {
 
 
@@ -34,6 +58,8 @@ justify-content: space-between;
 align-items: center;
 padding: 10px 20px;
 z-index: 1;
+width: 100%;
+box-sizing: border-box;
 
 }
 
@@ -58,20 +84,24 @@ z-index: 1;
     margin: 0 10px;
 }
 
-.logo-image,
-.logo-profile {
-    width: auto;
-    height: auto;
-}
 
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .main{
 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 70px);
     width: 100%;
     z-index: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -84,9 +114,7 @@ z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
-    
-    transform: translateX(-40px);
+    margin: 0 auto;
     
 }
 
@@ -96,4 +124,44 @@ z-index: 1;
     font-size: 20px;
     margin-bottom: 10px;
     
+}
+
+
+.details {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.genre,
+.rating,
+.release-date {
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin: 0 10px;
+    
+
+}
+
+.background-bottom-bar {
+
+    background-color: #02081d;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
 }
